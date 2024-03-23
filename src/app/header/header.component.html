@@ -1,0 +1,50 @@
+<!-- app.component.html or your main component's HTML file -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+          <!-- <img  src="assets/img/logo.png" alt="" style="width: 10%;"> -->
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <img  src="assets/img/logo.png" alt="" style="width: 20%;">
+          <ul class="navbar-nav mb-2 mb-lg-0  mx-auto">
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" routerLink="/" href="#">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Giới Thiệu</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#" routerLink="/product">Sản Phẩm</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Liên Hệ</a>
+              </li>
+              <app-search style="text-align: center;"></app-search>
+          </ul>
+
+          <ul class="navbar-nav mb-2 mb-lg-0">
+              <ng-container *ngIf="!isAuthenticated()">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#" routerLink="/login">Login</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#" routerLink="/register">Register</a>
+                  </li>
+              </ng-container>
+              <ng-container *ngIf="isAuthenticated()">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#" routerLink="/cart-page"><i
+                              class="fa-solid fa-cart-shopping"></i></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-danger">{{getCurrentUserName()}}</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" (click)="logout()">Đăng Xuất</a>
+                  </li>
+              </ng-container>
+          </ul>
+      </div>
+  </div>
+</nav>

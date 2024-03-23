@@ -1,0 +1,30 @@
+
+  <div class="container text-center">
+    <div class="mt-3 mb-3" style="background-color: #e5ded8;">
+      <h3 class="pb-3 pt-3">TRÀ SỮA</h3>
+    </div>
+      <div class="row">
+          <div class="col-lg-3" *ngFor="let product of products; let i = index" [ngClass]="{'active': i === 0}">
+              <div class="card products" routerLink="/product/{{product.id}}">
+                  <div class="card-header">
+                      <h5>{{product.name}}</h5>
+                  </div>
+                  <div class="card-body">
+                      <div class="image-container">
+                          <img src="{{product.img}}" alt="{{product.name}}">
+                      </div>
+
+                  </div>
+                  <div class="card-footer">
+                      <h4>
+                          {{product.price | number:'.0-3'}}đ
+                      </h4>
+                      <button class="btn btn-primary">Xem chi tiết</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+

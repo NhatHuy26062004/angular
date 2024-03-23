@@ -1,0 +1,71 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ecf0f1;
+  color: #34495e;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.product-form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-form h2 {
+  color: #3498db;
+}
+
+.product-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.product-form input,
+.product-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.product-form button {
+  padding: 10px 15px;
+  background-color: #089afc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.product-form button:hover {
+  background-color: #2980b9;
+}
+
+.product-form button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.product-form button,
+.product-form input:disabled,
+.product-form textarea:disabled {
+  opacity: 0.7;
+}
+
+/* Optional: Add hover effect to form fields */
+.product-form input:hover,
+.product-form textarea:hover {
+  border-color: #3498db;
+}

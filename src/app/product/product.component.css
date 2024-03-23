@@ -1,0 +1,72 @@
+/* Add this CSS to your existing styles or in a separate stylesheet */
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease; /* Add transition for box-shadow */
+}
+
+.card:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add box-shadow on hover */
+}
+
+.card-header {
+  background-color: #b4a79f;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.image-container {
+  height: 200px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.card-footer {
+  text-align: center;
+}
+
+.card-footer h4 {
+  color: black;
+}
+
+.card-footer button {
+  background-color: #b4a79f;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card-footer button:hover {
+  background-color: #f8e5de;
+}
+
+.image-container {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}

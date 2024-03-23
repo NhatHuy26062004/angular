@@ -1,0 +1,71 @@
+
+.navbar {
+  background-color: #4CAF50;
+  padding: 15px 0;
+  border-radius: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  animation: fadeInDown 1s ease;
+}
+
+
+
+
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  color: #000;
+  margin: 0 10px;
+  transition: color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+
+.navbar-nav .nav-link:hover {
+  color: #FFD700;
+  transform: scale(1.1);
+}
+
+
+.navbar-nav .nav-link[href="#"],
+.navbar-nav .nav-link[routerLink="/register"],
+.navbar-nav .nav-link[routerLink="/logout"] {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+
+}
+
+.navbar-nav .nav-link[href="#"]:hover,
+.navbar-nav .nav-link[routerLink="/register"]:hover,
+.navbar-nav .nav-link[routerLink="/logout"]:hover {
+  color: #FFD700;
+}
+
+.navbar-nav .nav-link[href="#"]:hover::before,
+.navbar-nav .nav-link[routerLink="/register"]:hover::before,
+.navbar-nav .nav-link[routerLink="/logout"]:hover::before {
+  content: '\1F449';
+  position: absolute;
+  left: -20px;
+  font-size: 1.2rem;
+}
+
+
+.navbar-nav .nav-link[routerLink="/"]:hover::before {
+  content: '\1F449';
+  position: absolute;
+  left: -20px;
+  font-size: 1.2rem;
+}
+
+.navbar-nav .nav-link[routerLink="/product"]:hover::before {
+  content: '\1F449';
+  position: absolute;
+  left: -20px;
+  font-size: 1.2rem;
+}
+.navbar-nav .nav-link[routerLink="/login"]:hover::before {
+  content: '\1F449';
+  position: absolute;
+  left: -20px;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,25 @@
+
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-6">
+          <img class="product-image" [src]="product.img" alt="Product Image">
+      </div>
+      <div class="col-md-6 product-details">
+          <h2 class="product-name">{{product.name}}</h2>
+          <div class="star-rating mb-3">
+            <i class="star-icon fa fa-star"></i>
+            <i class="star-icon fa fa-star"></i>
+            <i class="star-icon fa fa-star"></i>
+            <i class="star-icon fa fa-star"></i>
+            <i class="star-icon fa fa-star"></i>
+        </div>
+          <h4 class="product-price">Giá: {{product.price | number: '.0-3'}} đ</h4>
+          <h4>Mô tả:</h4>
+          <p class="product-description">{{product.description}}</p>
+          <button (click)="addtoCart()" class="add-to-cart">Thêm vào giỏ hàng</button>
+      </div>
+  </div>
+</div>
+
+
